@@ -2,6 +2,9 @@
   "name": "feckless-waddle",
   "version": "0.0.1",
   "description": "Ghost blog theme",
+  "scripts": {
+    "start": "./node_modules/.bin/gulp serve"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jackrobertscott/feckless-waddle.git"
@@ -18,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/jackrobertscott/feckless-waddle/issues"
   },
-  "homepage": "https://github.com/jackrobertscott/feckless-waddle#readme"
+  "homepage": "https://github.com/jackrobertscott/feckless-waddle#readme",
+  "devDependencies": {
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.1.0"
+  }
 }
