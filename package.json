@@ -1,0 +1,22 @@
+{
+  "name": "feckless-waddle",
+  "version": "0.0.1",
+  "description": "Ghost blog theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackrobertscott/feckless-waddle.git"
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "blog",
+    "clean",
+    "simple"
+  ],
+  "author": "Jack Scott <jack.rob.scott@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jackrobertscott/feckless-waddle/issues"
+  },
+  "homepage": "https://github.com/jackrobertscott/feckless-waddle#readme"
+}
