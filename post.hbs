@@ -1,0 +1,71 @@
+{{!< default}}
+
+{{> header}}
+
+{{#post}}
+
+<main>
+  <article class="{{post_class}}">
+
+    <header>
+      {{#if image}}<img src="{{image}}" alt="{{title}}">{{/if}}
+      <h1>{{title}}</h1>
+      <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
+    </header>
+
+    <section>
+      {{content}}
+    </section>
+
+    <footer>
+      {{#author}}
+
+          {{#if image}}
+          <figure>
+            <a href="{{url}}">
+              <img src="{{image}}" alt="{{name}}">
+            </a>
+          </figure>
+          {{/if}}
+
+          <section>
+            <a href="{{url}}">
+              <h5>{{name}}</h5>
+              {{#if bio}}<p>{{bio}}</p>{{/if}}
+            </a>
+            {{#if location}}<p>{{location}}</p>{{/if}}
+            <a href="{{website}}">
+              {{#if website}}<p>{{website}}</p>{{/if}}
+            </a>
+          </section>
+
+      {{/author}}
+    </footer>
+
+  </article>
+</main>
+
+<section>
+  <section class="comments">
+    {{! add disqus}}
+  </section>
+
+  <aside class="articles">
+    {{#next_post}}
+      <a href="{{url}}">
+        {{#if image}}<img src="{{image}}" alt="{{title}}">{{/if}}
+        <h2>{{title}}</h2>
+        <p>{{excerpt words="20"}}&hellip;</p>
+      </a>
+    {{/next_post}}
+    {{#prev_post}}
+      <a href="{{url}}">
+        {{#if image}}<img src="{{image}}" alt="{{title}}">{{/if}}
+        <h2>{{title}}</h2>
+        <p>{{excerpt words="20"}}&hellip;</p>
+      </a>
+    {{/prev_post}}
+  </aside>
+</section>
+
+{{/post}}
