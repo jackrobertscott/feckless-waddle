@@ -1,16 +1,12 @@
-<header>
+<header class="fw-header">
   <div class="container">
     <div class="row">
-      <div class="four">
-        <h1>{{@blog.title}}</h1>
-        <h5>{{@blog.description}}</p>
+      <div class="col-sm-4">
+        <h3>{{@blog.title}}</h1>
+        <h5>{{@blog.description}}</h5>
       </div>
-      <div class="eight">
-        <nav>
-          <button>Home</button>
-          <button>Archives</button>
-          <button>Recent</button>
-        </nav>
+      <div class="col-sm-8">
+        {{navigation}}
       </div>
     </div>
   </div>
