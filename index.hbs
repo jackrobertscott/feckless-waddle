@@ -2,11 +2,21 @@
 
 {{> header}}
 
+<section class="fw-banner{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}} no-cover{{/if}}">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="description">{{@blog.description}}</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
 <main class="fw-index">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
 
+      <div class="col-sm-12">
         {{#foreach posts}}
         <article class="{{post_class}}">
           <header>
@@ -30,8 +40,8 @@
         {{/foreach}}
 
         {{pagination}}
-
       </div>
+
     </div>
   </div>
 </main>

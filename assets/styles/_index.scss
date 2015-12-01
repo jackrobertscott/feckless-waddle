@@ -1,0 +1,29 @@
+/* Banner */
+.fw-banner {
+  height: 400px;
+  background-size: cover;
+  .description {
+    text-align: center;
+    color: $light;
+    margin: 200px 0 0;
+    text-shadow: 1px 1px 2px lighten($dark, 40%);
+  }
+}
+
+/* Posts */
+.fw-index {
+  header {
+    text-align: center;
+    padding: $space/2 0;
+  }
+  section {
+    @include font-pretty(20px);
+  }
+  footer {
+    img {
+      height: 50px;
+      width: 50px;
+      border-radius: 100px;
+    }
+  }
+}

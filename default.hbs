@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="{{asset "vendor/normalize.css"}}">
     <link rel="stylesheet" href="{{asset "vendor/bootstrap/css/bootstrap.min.css"}}">
+    <link rel="stylesheet" href="{{asset "vendor/highlight/styles/solarized_dark.css"}}">
     <link rel="stylesheet" href="{{asset "dist/styles.min.css"}}">
 
     {{ghost_head}}
@@ -18,10 +19,12 @@
 
     {{{body}}}
 
-    {{ghost_foot}}
-
     <script type="text/javascript" src="{{asset "vendor/jquery.min.js"}}"></script>
     <script type="text/javascript" src="{{asset "vendor/bootstrap/js/bootstrap.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "vendor/highlight/highlight.pack.js"}}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <script type="text/javascript" src="{{asset "dist/scripts.min.js"}}"></script>
+
+    {{ghost_foot}}
   </body>
 </html>
